@@ -6,27 +6,29 @@
   font-family: "Raleway", sans-serif;
 }
 body {
-  background: #000;
-  color: #eee;
+  background-image: linear-gradient(to left bottom, #a4005d, #950769, #811474, #6a1f7c, #4d2782, #3d3289, #293b8f, #004393, #00529b, #0061a1, #006ea4, #007ba6);
+  color: #f9f9f9;
   text-align: center;
   height: 100vh;
   width: 100%;
 }
 
 .container {
-  background: #050505;
-  box-shadow: 0px 0px 10px 1px #ff5500;
-  color: #fff;
-  margin: 0 auto;
-  width: 900px;
+  max-width: 50em;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px 60px;
-  margin-top: 100px;
-  border-radius: 20px;
+  justify-content: center;
 }
+
+.container .converter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .container h1 {
   font-size: 1.6em;
   font-weight: 900;
@@ -53,15 +55,10 @@ body {
 }
 
 .container input {
-  padding: 20px;
+  padding: 12px;
   font-size: 2em;
-  font-weight: 900;
-  width: 200px;
+  font-weight: 600;
+  width: 100%;
   border-radius: 10px;
   background: #eee;
-}
-.container a:hover {
-  transition: 0.2s;
-  background: #eee;
-  color: #ff5500;
 }
